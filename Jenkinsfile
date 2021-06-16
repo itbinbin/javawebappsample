@@ -19,8 +19,8 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'fabricGroup'
-      def webAppName ='dockerweb2'
+      def resourceGroup = 'webApp'
+      def webAppName ='jenkinsWebTest1'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'Bo5g~iFiNi39zD64YPf~M27QNw1Kj5W-i~', usernameVariable: '11575c68-935d-493e-83a9-229e95c41600')]) {
        sh '''
