@@ -35,7 +35,7 @@ node {
       // upload package
       sh "curl -T target/calculator-1.0.war $ftpProfile.url/webapps/ROOT.war -u '$ftpProfile.username:$ftpProfile.password'"
       // log out
-      sh 'az logout'
+      sh 'az logout' 
     }
   }
 }
